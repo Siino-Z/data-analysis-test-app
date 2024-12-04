@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KPI Data Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>KPI Data Analysis App</h1>
+
+  <!-- File Upload Section -->
+  <section id="file-upload">
+    <h2>Upload KPI Data</h2>
+    <input type="file" id="fileInput" accept=".csv" />
+  </section>
+
+  <!-- Display Data -->
+  <section id="data-display">
+    <h2>Uploaded Data</h2>
+    <table id="dataTable">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Chart Section -->
+  <section id="chart-display">
+    <h2>Visualization</h2>
+    <canvas id="dataChart"></canvas>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="upload.js"></script>
+</body>
+</html>
